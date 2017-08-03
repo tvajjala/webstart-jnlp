@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" 
+      codebase="http://localhost:8080/jnlp/" href="launch.jnlp">
+  <information>
+    <title>JNLP Launcher</title>
+    <vendor>Cisco Inc.</vendor>
+    <homepage href="index.html"/>
+    <description> Simple JNLP APplication through server !</description>
+    <offline-allowed/>
+  </information>
+  <security><all-permissions/></security>
+
+  <resources>
+    <j2se version="1.7+"/>
+    <jar href="report.jar"/>
+    <property name="title" value="JNLP-Launched test" />
+  </resources>
+
+  <application-desc main-class="com.cisco.Report"/>
+</jnlp>

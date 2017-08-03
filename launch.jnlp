@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" 
+      codebase="http://server/b2/ad/"
+      href="test.jnlp">
+  <information>
+    <title>A Utility Library Test</title>
+    <vendor>Mauro Inc.</vendor>
+    <homepage href="home.html"/>
+    <description>Tests the utility library, running effectively in both modes!</description>
+    <offline-allowed/>
+  </information>
+  <security><all-permissions/></security>
+
+  <resources>
+    <j2se version="1.3+"/>
+    <jar href="test.jar"/>
+    <jar href="utiljnlp1_0.jar"/>
+
+    <property name="title" value="JNLP-Launched test" />
+
+  </resources>
+  <application-desc main-class="com.marinilli.b2.ad.Test"/>
+</jnlp>

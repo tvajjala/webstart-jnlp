@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webstart-jnlp.iml" filepath="$PROJECT_DIR$/.idea/modules/webstart-jnlp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webstart-jnlp_main.iml" filepath="$PROJECT_DIR$/.idea/modules/webstart-jnlp_main.iml" group="webstart-jnlp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/webstart-jnlp_test.iml" filepath="$PROJECT_DIR$/.idea/modules/webstart-jnlp_test.iml" group="webstart-jnlp" />
+    </modules>
+  </component>
+</project>
