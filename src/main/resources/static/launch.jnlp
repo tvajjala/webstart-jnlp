@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0+" 
-      codebase="http://localhost:8080/jnlp/" href="launch.jnlp">
+<jnlp spec="1.0+" codebase="http://localhost:8080/jnlp/" href="launch.jnlp">
   <information>
     <title>JNLP Launcher</title>
-    <vendor>Cisco Inc.</vendor>
+    <vendor>Cisco Systems</vendor>
     <homepage href="index.html"/>
     <description> Simple JNLP APplication through server !</description>
+    <icon href="icon.png" kind="splash"/>
     <offline-allowed/>
   </information>
-  <security><all-permissions/></security>
+  <security>
+    <all-permissions/>
+  </security>
 
   <resources>
-    <j2se version="1.7+"/>
-    <jar href="dialog.jar"/>
-    <property name="title" value="JNLP-Launched test" />
+    <j2se version="1.7+" max-heap-size="1024m"/>
+    <jar href="mainApplication.jar"/>
+    <property name="title" value="JNLP-Launcher" />
+    <property name="jnlp.packEnabled" value="true" />
   </resources>
 
-  <application-desc main-class="com.cisco.JNLPDialog"/>
+  <application-desc main-class="com.cisco.dialog.JNLPDialog">
+     <!--  this argument we can read in the program-->
+      <argument>Java Network Launching Protocol</argument>
+  </application-desc>
 </jnlp>
